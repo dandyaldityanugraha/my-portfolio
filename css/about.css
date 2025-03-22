@@ -14,9 +14,6 @@
     box-sizing: border-box;
     font-family: 'Kumbh Sans', sans-serif;
   }
-  html, body {
-    height: 100%;
-  }
   
   body {
     background-color: var(--black);
@@ -29,15 +26,15 @@
   
   /* Navbar */
   .navbar {
-    background: var(--navy);
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    width: 100%;
     z-index: 999;
+    background: var(--black);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* optional: smooth shadow when scrolling */
   }
+  
   
   .navbar__container {
     display: flex;
@@ -56,10 +53,6 @@
     display: flex;
     align-items: center;
     font-family: 'Kumbh Sans', sans-serif;
-  }
-  
-  #navbar__logo i {
-    margin-right: 0.5rem;
   }
   
   .navbar__menu {
@@ -183,109 +176,314 @@
   }
   
   /* About Section */
-  .section {
+  h2{
+    color: var(--accent);
+    scroll-margin-top: 120px;
+  }
+
+  section {
     padding: 4rem 2rem;
   }
   
+
   ul {
     list-style: none;
     padding-left: 0;
   }
-  
-  /* Contact Form */
-  .contact-form input,
-  .contact-form textarea {
-    width: 100%;
-    padding: 1rem;
-    margin: 0.5rem 0;
-    background: var(--black);
-    border: 1px solid var(--gray);
-    color: var(--white);
-    border-radius: 5px;
+  .about.section {
+    padding-top: 100px;
   }
   
-  .contact-form button {
-    background-color: var(--accent);
-    border: none;
-    padding: 1rem 2rem;
-    color: var(--white);
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
+
+  .about-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--accent);
+    margin-bottom: 2rem;
   }
   
-  .contact-form button:hover {
-    background-color: var(--white);
-    color: var(--black);
+  .about-layout {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem;
   }
   
-  /* Projects Section */
-  .projects {
-    background: #131313;
-    padding: 5rem 2rem;
+  .about__image {
+    flex: 1;
+    min-width: 280px;
     text-align: center;
   }
   
-  .projects__heading {
-    color: var(--white);
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
+  .about__image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
   }
   
-  .projects__container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
+  .about__text {
+    flex: 1;
+    min-width: 300px;
   }
   
-  .projects__card {
-    background-color: #1f1f1f;
-    color: #fff;
-    padding: 2rem;
-    width: 300px;
-    border-radius: 8px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-    transition: transform 0.3s;
-  }
-  
-  .projects__card:hover {
-    transform: translateY(-10px);
-  }
-  
-  .projects__card h2 {
+  .about__text h2 {
     color: var(--accent);
     margin-bottom: 1rem;
   }
   
-  .projects__card p {
-    font-size: 1rem;
-    margin-bottom: 1.5rem;
+  .about__text p {
+    color: var(--gray);
+    margin-bottom: 1rem;
   }
   
-  .projects__links {
+  .about__text blockquote {
+    font-style: italic;
+    color: var(--white);
+    border-left: 4px solid var(--accent);
+    padding-left: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .skills-section {
+    text-align: center;
+    margin: 3rem auto;
+  }
+  
+  .skill-list {
     display: flex;
-    justify-content: space-between;
-    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
   }
   
-  .projects__links .button {
-    padding: 0.5rem 1rem;
-    font-size: 0.9rem;
-    text-decoration: none;
-    background: var(--accent);
-    color: white;
-    border-radius: 4px;
-    transition: 0.3s;
+  .skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    padding: 1rem;
+    background: var(--navy);
+    border-radius: 10px;
+    color: var(--gray);
+    transition: transform 0.3s ease;
   }
   
-  .projects__links .button:hover {
-    background: var(--white);
+  .skill-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .skill-icon i {
+    font-size: 2rem;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+  }
+  
+  .skill-texts {
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+  }
+  
+  .skill-item p {
+    font-size: 0.8rem;
+    color: var(--gray);
+  }
+  
+  /* Contact Session */
+/* Center Let's Connect section */
+/* Let's Connect Section Centering */
+.social-contact {
+  text-align: center;
+  margin: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-contact .main__container {
+  max-width: 800px;
+  width: 100%;
+}
+
+/* Center each link block */
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.social-links a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.8rem 1.2rem;
+  border: 1px solid var(--accent);
+  border-radius: 5px;
+  transition: 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.social-links a i {
+  margin-right: 8px;
+  color: var(--accent);
+}
+
+.social-links a:hover {
+  background: var(--accent);
+  color: var(--black);
+}
+
+/* Center the social section */
+.social-container {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.social-container h2 {
+  color: var(--accent);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.social-container p {
+  color: var(--white);
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Contact Form Centering */
+.contact .main__container {
+  display: flex;
+  justify-content: center;
+}
+
+.contact .main__content {
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+}
+
+
+/* Contact Form Centering */
+.contact .main__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact .main__content {
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Optional: Limit form input width for nicer centering */
+.contact-form input,
+.contact-form textarea {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+  
+  
+  .social-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+  }
+  
+  .social-links a {
+    background-color: transparent;
+    border: 1px solid var(--accent);
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: var(--white);
+    transition: 0.3s ease;
+  }
+  
+  .social-links a i {
+    margin-right: 8px;
+    color: var(--accent);
+  }
+  
+  .social-links a:hover {
+    background-color: var(--accent);
     color: var(--black);
   }
+  
+  /* Contact Form */
+.contact .main__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.contact .main__content {
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contact .main__content h2 {
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.contact .main__content p {
+  color: var(--white);
+  margin-bottom: 2rem;
+}
+
+/* Input Fields Styling (already done) */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  background: var(--black);
+  border: 1px solid var(--gray);
+  color: var(--white);
+  border-radius: 5px;
+}
+
+.contact-form button {
+  background-color: var(--accent);
+  border: none;
+  padding: 1rem 2rem;
+  color: var(--white);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+  
   .footer__container {
-    background: var(--navy); */
+    background: var(--black); 
     color: var(--gray);
     text-align: center;
     padding: 0.8rem 1rem;
@@ -309,7 +507,7 @@
       width: 100%;
       top: 80px;
       left: 0;
-      background: var(--navy);
+      background: var(--black);
     }
   
     .navbar__menu.active {

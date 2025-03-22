@@ -27,42 +27,149 @@
     </div>
   </nav>
 
-  <!-- About Section -->
-  <main class="main">
+ <!-- About Section -->
+ <main class="main">
     <section class="about section">
-      <div class="main__container">
-        <div class="main__img-container">
-          <img id="main__img" src="../images/Dandy.jpg" alt="Dandy Profile" />
+        <!-- Heading at the top -->
+        <h1 class="about-title">About Me</h1>
+    
+        <!-- Main layout: side-by-side on desktop, stacked on mobile -->
+        <div class="main__container about-layout">
+    
+            <!-- Left Column: Image -->
+            <div class="about__image">
+            <img src="../images/Dandy.jpg" alt="Dandy Profile" />
+            </div>
+    
+            <!-- Right Column: Description -->
+            <div class="about__text">
+            <h2>Hello World!</h2>
+            <p>My name is <strong>Dandy Alditya Nugraha</strong>. I am from Surakarta, Indonesia.</p>
+            <p>I am a student at <strong>Brigham Young University–Hawaii</strong>. I started studying here in Spring 2023. I am majoring in <strong>Computer Science</strong>, and I am also minoring in <strong>Film</strong>, <strong>Entrepreneurship</strong>, and <strong>Mathematics</strong>.</p>
+            <p>I enjoy building websites and working with technology. I focus on <strong>fullstack web development</strong>, which means I work on both the design and the coding of websites and web apps.</p>
+            <p>I also enjoy making videos and learning how to share ideas through media and design. I believe technology and creativity can work together to solve problems and help people.</p>
+            <p>I love learning and working with others on projects. I am always open to new opportunities to grow and create.</p>
+            <blockquote>“If it were easy, everyone would do it.”</blockquote> <br>
+
         </div>
-        <div class="main__content">
-          <h1>About Me</h1>
-          <p>Hello! I’m <strong>Dandy Nugraha</strong>, a Computer Science student at BYU–Hawaii, passionate about software development and digital media production. I love blending logic with creativity to build meaningful and interactive experiences across web, video, and technology.</p>
-          <h2>Skills</h2>
-          <ul style="color: var(--gray); line-height: 1.8;">
-            <li>HTML, CSS, JavaScript</li>
-            <li>Java, Python, C++</li>
-            <li>Video editing (Premiere Pro, After Effects)</li>
-            <li>UI/UX Design, Figma</li>
-            <li>Git & GitHub</li>
-          </ul>
+    </section>
+    <section class="skills-section">
+        <h2>My Skills</h2>
+            <div class="skill-list">
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                    <div class="skill-texts">HTML5</div>
+                    <p>Advance</p>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                    <div class="skill-texts">CSS</div>
+                    <p>Advance</p>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fab fa-js-square"></i></div>
+                    <div class="skill-texts">JavaScript</div>
+                    <p>Intermediate</p>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fab fa-java"></i></div>
+                    <div class="skill-texts">Java</div>
+                    <p>Intermediate</p>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fab fa-python"></i></div>
+                    <div class="skill-texts">Python</div>
+                    <p>Intermediate</p>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fas fa-database"></i></div>
+                    <div class="skill-texts">SQL</div>
+                    <p>Beginner</p>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fas fa-video"></i></div>
+                    <div class="skill-texts">Video Editing</div>
+                    <p>Expert</p>
+                </div>
+            </div>
+    </section> 
+
+    <section class="skills-section">
+        <h2 class="skill-subtitle">Tools & Technologies</h2>
+    <div class="skill-list">
+        <div class="skill-item">
+            <div class="skill-icon"><i class="fab fa-figma"></i></div>
+            <div class="skill-texts">Figma</div>
+            <p>Beginner</p>
         </div>
-      </div>
+        <div class="skill-item">
+            <div class="skill-icon"><i class="fas fa-mobile-alt"></i></div>
+            <div class="skill-texts">Android Studio</div>
+            <p>Intermediate</p>
+        </div>
+        <div class="skill-item">
+            <div class="skill-icon"><i class="fas fa-code"></i></div>
+            <div class="skill-texts"> Microsoft VS Code</div>
+            <p>Advance</p>
+        </div>
+        <div class="skill-item">
+            <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+            <div class="skill-texts">Git</div>
+            <p>Intermediate</p>
+        </div>
+        <div class="skill-item">
+            <div class="skill-icon"><i class="fab fa-github"></i></div>
+            <div class="skill-texts">GitHub</div>
+            <p>Intermediate</p>
+        </div>
+        <div class="skill-item">
+            <div class="skill-icon"><i class="fab fa-adobe"></i></div>
+            <div class="skill-texts">Adobe Premiere Pro</div>
+            <p>Expert</p>
+        </div>
+    </div>
     </section>
 
-    <!-- Contact Form -->
-    <section class="section contact">
-      <div class="main__container">
-        <div class="main__content">
-          <h2>Contact Me</h2>
-          <p>Feel free to reach out directly through this form!</p>
-          <form class="contact-form" action="https://formsubmit.co/dandyalditya99@gmail.com" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required />
-            <input type="email" name="email" placeholder="Your Email" required />
-            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-            <button type="submit" class="main__btn">Send</button>
-          </form>
+    <!-- Social Media & Resume Section -->
+    <section class="section social-contact">
+        <div class="social-container">
+        <h2>Let's Connect</h2>
+        <p>You can reach out through the links below or download my resume.</p>
+        <div class="social-links">
+            <a href="https://instagram.com/dandyalditya_n" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i> Instagram
+            </a>
+            <a href="https://linkedin.com/in/dandy-nugraha" target="_blank">
+            <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="mailto:dandyalditya99@gmail.com">
+            <i class="fas fa-envelope"></i> Email Me
+            </a>
+            <a href="https://github.com/dandyaldityanugraha" target="_blank">
+            <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="../images/DandyNugraha Resume.docx" target="_blank" download>
+            <i class="fas fa-file-download"></i> Download Resume
+            </a>
         </div>
-      </div>
+        </div>
+    </section>
+  
+
+        <!-- Contact Form -->
+    <section class="section contact">
+        <div class="main__container">
+            <div class="main__content">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out directly through this form!</p>
+            <form class="contact-form" action="https://formsubmit.co/dandyalditya99@gmail.com" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required />
+                <input type="email" name="email" placeholder="Your Email" required />
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" class="main__btn">Send</button>
+            </form>
+            </div>
+        </div>
     </section>
   </main>
 
