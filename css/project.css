@@ -71,6 +71,9 @@
   
   .navbar__item {
     height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .navbar__links {
@@ -101,12 +104,33 @@
     background: var(--white);
     color: var(--black);
   }
+
+  .button:focus,
+.navbar__links:focus,
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 2px dashed var(--accent);
+  outline-offset: 4px;
+}
   
   /* Hamburger Menu */
   .navbar__toggle {
     display: none;
     cursor: pointer;
   }
+
+  .navbar__toggle.is-active .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .navbar__toggle.is-active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .navbar__toggle.is-active .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
+  
   
   .bar {
     display: block;
