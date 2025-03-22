@@ -275,7 +275,7 @@
     font-size: 1rem;
     margin-bottom: 1.5rem;
   }
-  
+
   .project__img {
     width: 100%;
     height: 180px;
@@ -305,16 +305,16 @@
     color: var(--black);
   }
 
-  .footer__container {
-    background: var(--navy);
-    color: var(--gray);
-    text-align: center;
-    padding: 2rem 1rem;
-    font-size: 0.9rem;
-  }
-  .footer__container p {
-    margin: 5px 0;
-  }
+.footer__container {
+  background: var(--navy); */
+  color: var(--gray);
+  text-align: center;
+  padding: 0.8rem 1rem;
+  font-size: 0.9rem;
+}
+.footer__container p {
+  margin: 5px 0;
+}
   
   /* Responsive */
   @media screen and (max-width: 960px) {

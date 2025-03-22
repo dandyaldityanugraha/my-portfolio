@@ -285,10 +285,10 @@
   }
 
   .footer__container {
-    background: var(--navy);
+    background: var(--navy); */
     color: var(--gray);
     text-align: center;
-    padding: 2rem 1rem;
+    padding: 0.8rem 1rem;
     font-size: 0.9rem;
   }
   .footer__container p {
