@@ -429,7 +429,8 @@
     background-color: var(--accent);
     color: var(--black);
   }
-  
+  s
+
   /* Contact Form */
 .contact .main__container {
   display: flex;
@@ -498,6 +499,7 @@
     .main__container {
       grid-template-columns: 1fr;
       text-align: center;
+      padding: 0 1rem;
     }
   
     .navbar__menu {
@@ -526,6 +528,21 @@
   
     .main__img-container {
       margin-top: 2rem;
+    }
+    
+    /* Make skill cards two per row on mobile */
+    .skill-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      justify-content: center;
+    }
+  }
+  
+  /* Optional: Stack skills as one column on very small screens */
+  @media screen and (max-width: 500px) {
+    .skill-list {
+      grid-template-columns: 1fr;
     }
   }
   
