@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me | Dandy Nugraha</title>
+  <link rel="stylesheet" href="../css/about.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="../Dandy.html" id="navbar__logo">Dandy Nugraha</a>
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__item"><a href="../Dandy.html" class="navbar__links">Home</a></li>
+        <li class="navbar__item"><a href="../html/About.html" class="navbar__links">About</a></li>
+        <li class="navbar__item"><a href="../html/Project.html" class="navbar__links">Projects</a></li>
+        <li class="navbar__btn"><a href="mailto:dandyalditya99@gmail.com" class="button">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- About Section -->
+  <main class="main">
+    <section class="about section">
+      <div class="main__container">
+        <div class="main__img-container">
+          <img id="main__img" src="../images/Dandy.jpg" alt="Dandy Profile" />
+        </div>
+        <div class="main__content">
+          <h1>About Me</h1>
+          <p>Hello! I’m <strong>Dandy Nugraha</strong>, a Computer Science student at BYU–Hawaii, passionate about software development and digital media production. I love blending logic with creativity to build meaningful and interactive experiences across web, video, and technology.</p>
+          <h2>Skills</h2>
+          <ul style="color: var(--gray); line-height: 1.8;">
+            <li>HTML, CSS, JavaScript</li>
+            <li>Java, Python, C++</li>
+            <li>Video editing (Premiere Pro, After Effects)</li>
+            <li>UI/UX Design, Figma</li>
+            <li>Git & GitHub</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="section contact">
+      <div class="main__container">
+        <div class="main__content">
+          <h2>Contact Me</h2>
+          <p>Feel free to reach out directly through this form!</p>
+          <form class="contact-form" action="https://formsubmit.co/dandyalditya99@gmail.com" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit" class="main__btn">Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer__container">
+    <p>&copy; <span id="year"></span> Dandy Nugraha</p>
+    <p id="datetime"></p>
+  </footer>
+
+    <!-- Scripts -->
+  <script src="../app.js" defer></script>
+
+</body>
+</html>

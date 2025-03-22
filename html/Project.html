@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Dandy Nugraha</title>
+  <link rel="stylesheet" href="../css/project.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="../Dandy.html" id="navbar__logo">Dandy Nugraha</a>
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__item"><a href="../Dandy.html" class="navbar__links">Home</a></li>
+        <li class="navbar__item"><a href="../html/About.html" class="navbar__links">About</a></li>
+        <li class="navbar__item"><a href="../html/Project.html" class="navbar__links">Projects</a></li>
+        <li class="navbar__btn"><a href="mailto:dandyalditya99@gmail.com" class="button">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Projects Section -->
+  <main class="main">
+    <section class="projects">
+      <h1 class="projects__heading">Featured Projects</h1>
+      <div class="projects__container">
+
+        <!-- Project 1 -->
+        <div class="projects__card">
+          <img src="../images/Dandy.jpg" alt="Canvas Scheduler" class="project__img" />
+          <h2>Canvas Scheduler</h2>
+          <p>A Java-based scheduling tool connected to the Canvas API to help students stay organized.</p>
+          <div class="projects__links">
+            <a href="https://github.com/your-github/canvas-scheduler" class="button" target="_blank">GitHub</a>
+            <a href="#" class="button">Live Demo</a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="projects__card">
+          <img src="../images/Dandy.jpg" alt="Night Shift Film" class="project__img" />
+          <h2>Night Shift (Short Film)</h2>
+          <p>A horror film using film noir lighting and tension-building storytelling techniques.</p>
+          <div class="projects__links">
+            <a href="https://github.com/your-github/night-shift" class="button" target="_blank">GitHub</a>
+            <a href="#" class="button">Watch</a>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="projects__card">
+          <img src="../images/Dandy.jpg" alt="Waimea Web Redesign" class="project__img" />
+          <h2>Waimea Valley Web Redesign</h2>
+          <p>A conceptual redesign project for Waimea Valley’s website with a focus on conservation.</p>
+          <div class="projects__links">
+            <a href="https://github.com/your-github/waimea-valley" class="button" target="_blank">GitHub</a>
+            <a href="#" class="button">Preview</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer__container">
+    <p>&copy; <span id="year"></span> Dandy Nugraha</p>
+    <p id="datetime"></p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../app.js" defer></script>
+</body>
+</html>
