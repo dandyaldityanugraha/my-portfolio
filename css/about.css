@@ -540,7 +540,7 @@
   }
   
   /* Optional: Stack skills as one column on very small screens */
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 300px) {
     .skill-list {
       grid-template-columns: 1fr;
     }
