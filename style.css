@@ -143,6 +143,7 @@ outline-offset: 4px;
 .main {
   background: var(--black);
   padding: 4rem 2rem;
+  padding-top: 200px;
 }
 
 .main__container {
