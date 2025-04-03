@@ -293,7 +293,7 @@ ul {
 .skill-item {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: auto;
   width: 150px;
   padding: 1rem;
   background: var(--navy);
