@@ -47,6 +47,14 @@ body {
   width: 100%;
   max-width: 1300px;
   padding: 0 50px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.navbar__menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
 }
 
 #navbar__logo {
@@ -61,12 +69,6 @@ body {
 
 #navbar__logo i {
   margin-right: 0.5rem;
-}
-
-.navbar__menu {
-  display: flex;
-  align-items: center;
-  list-style: none;
 }
 
 .navbar__item {
