@@ -39,7 +39,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
+  height: 100px;
   width: 100%;
   max-width: 1300px;
   padding: 0 50px;
@@ -50,7 +50,7 @@ body {
 #navbar__logo {
   color: var(--accent);
   text-decoration: none;
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   font-weight: 300; /* Thin font weight */
   display: flex;
   align-items: center;
@@ -68,7 +68,7 @@ body {
 }
 
 .navbar__item {
-  height: 80px;
+  height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -77,11 +77,12 @@ body {
 .navbar__links {
   color: var(--gray);
   text-decoration: none;
-  padding: 0 1rem;
+  padding: 0 1.5rem;
   height: 100%;
   display: flex;
   align-items: center;
   transition: color 0.3s ease;
+  font-size: 1.1rem;
 }
 
 .navbar__links:hover {
@@ -89,13 +90,14 @@ body {
 }
 
 .navbar__btn .button {
-  padding: 10px 20px;
+  padding: 12px 24px;
   background: var(--accent);
   color: var(--white);
   border: none;
   border-radius: 4px;
   text-decoration: none;
   transition: 0.3s;
+  font-size: 1.1rem;
 }
 
 .navbar__btn .button:hover {
