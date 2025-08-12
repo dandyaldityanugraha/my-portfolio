@@ -40,14 +40,16 @@
   }
   
   .navbar__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 80px;
-    width: 100%;
-    max-width: 1300px;
-    padding: 0 50px;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  max-width: 1300px;
+  padding: 0 50px;
+  margin: 0 auto;
+  position: relative;
+}
   
   #navbar__logo {
     color: var(--accent);
